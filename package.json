@@ -1,6 +1,6 @@
 {
   "name": "@yield-protocol/yieldspace-interfaces",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "YieldSpace interfaces",
   "author": "Yield Inc.",
   "files": [
@@ -8,7 +8,7 @@
   ],
   "devDependencies": {
     "@yield-protocol/utils": "^1.2.2",
-    "@yield-protocol/vault-interfaces": "^2.0.0"
+    "@yield-protocol/vault-interfaces": "^2.0.5"
   },
   "repository": {
     "url": "git+https://github.com/yieldprotocol/yieldspace-interfaces.git",
