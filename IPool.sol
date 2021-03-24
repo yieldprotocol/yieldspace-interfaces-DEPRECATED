@@ -11,10 +11,10 @@ interface IPool is IERC20, IERC2612 {
     function maturity() external view returns(uint32);
     function getBaseTokenReserves() external view returns(uint112);
     function getFYTokenReserves() external view returns(uint112);
-    function sellBaseToken(address to) external returns(uint128);
-    function buyBaseToken(address to, uint128 baseTokenOut) external returns(uint128);
-    function sellFYToken(address to) external returns(uint128);
-    function buyFYToken(address to, uint128 fyTokenOut) external returns(uint128);
+    function sellBaseToken(address to, uint128 min) external returns(uint128);
+    function buyBaseToken(address to, uint128 baseTokenOut, uint128 max) external returns(uint128);
+    function sellFYToken(address to, uint128 min) external returns(uint128);
+    function buyFYToken(address to, uint128 fyTokenOut, uint128 max) external returns(uint128);
     function sellBaseTokenPreview(uint128 baseTokenIn) external view returns(uint128);
     function buyBaseTokenPreview(uint128 baseTokenOut) external view returns(uint128);
     function sellFYTokenPreview(uint128 fyTokenIn) external view returns(uint128);
