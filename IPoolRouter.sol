@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-pragma solidity ^0.8.1;
-
-import "@yield-protocol/yieldspace-interfaces/IPool.sol";
+pragma solidity >= 0.8.0;
+import "./IPool.sol";
 import "./PoolDataTypes.sol";
 
 
