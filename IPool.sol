@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity >= 0.8.0;
 import "@yield-protocol/utils-v2/contracts/token/IERC20.sol";
 import "@yield-protocol/utils-v2/contracts/token/IERC2612.sol";
 import "@yield-protocol/vault-interfaces/IFYToken.sol";
@@ -23,6 +23,6 @@ interface IPool is IERC20, IERC2612 {
     function buyFYTokenPreview(uint128 fyTokenOut) external view returns(uint128);
     function mint(address to, bool calculateFromBase, uint256 minTokensMinted) external returns (uint256, uint256, uint256);
     function mintWithBase(address to, uint256 fyTokenToBuy, uint256 minTokensMinted) external returns (uint256, uint256, uint256);
-    function burn(address to, uint256 minBaseOut, uint256 minFYTokenOut) external returns (uint256, uint256, uint256);
+    function burn(address baseTo, address fyTokenTo, uint256 minBaseOut, uint256 minFYTokenOut) external returns (uint256, uint256, uint256);
     function burnForBase(address to, uint256 minBaseOut) external returns (uint256, uint256);
 }
