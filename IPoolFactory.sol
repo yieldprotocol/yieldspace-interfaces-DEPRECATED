@@ -11,7 +11,7 @@ interface IPoolFactory {
   function createPool(address base, address fyToken) external returns (address);
   function nextBase() external view returns (address);
   function nextFYToken() external view returns (address);
-  function k() external view returns (int128);
+  function ts() external view returns (int128);
   function g1() external view returns (int128);
   function g2() external view returns (int128);
 }
