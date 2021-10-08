@@ -6,6 +6,7 @@ import "@yield-protocol/vault-interfaces/IFYToken.sol";
 
 
 interface IPool is IERC20, IERC2612 {
+    function getCache() external view returns (uint112, uint112, uint32);
     function base() external view returns(IERC20);
     function fyToken() external view returns(IFYToken);
     function maturity() external view returns(uint32);
