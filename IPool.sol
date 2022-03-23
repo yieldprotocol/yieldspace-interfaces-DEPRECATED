@@ -30,4 +30,5 @@ interface IPool is IERC20, IERC2612 {
     function mintWithBase(address to, address remainder, uint256 fyTokenToBuy, uint256 minRatio, uint256 maxRatio) external returns (uint256, uint256, uint256);
     function burn(address baseTo, address fyTokenTo, uint256 minRatio, uint256 maxRatio) external returns (uint256, uint256, uint256);
     function burnForBase(address to, uint256 minRatio, uint256 maxRatio) external returns (uint256, uint256);
+    function cumulativeBalancesRatio() external view returns (uint256);
 }
