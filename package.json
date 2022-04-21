@@ -8,7 +8,7 @@
   ],
   "devDependencies": {
     "@yield-protocol/utils-v2": "^2.2.1",
-    "@yield-protocol/vault-interfaces": "^2.0.5"
+    "@yield-protocol/vault-interfaces": "^2.4.1"
   },
   "repository": {
     "url": "git+https://github.com/yieldprotocol/yieldspace-interfaces.git",
